@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">Stat Tracker</string>
+    <string name="lol">League of Legends</string>
+    <string name="tft">Teamfight Tactics</string>
+    <string name="lor">Legends of Runeterra</string>
+    <string name="valorant">Valorant</string>
+    <string name="riotgames">Riot Games</string>
+    <string name="add_account">Add Account</string>
+
+    <string name="add">Add</string>
+    <string name="add_field">Add Data</string>
+    <string name="save">Save</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="close">Close</string>
+
+    <string name="divider">Divider</string>
+    <string name="today">Today</string>
+    <string name="default_zero">0</string>
+    <string name="default_one">1</string>
+
+    <string name="icon_select">Select Icon</string>
+
+    <string name="confirm">Confirm</string>
+
+    <string name="search">Search</string>
+
+    <string name="tier_label">Tier</string>
+    <string name="division_label">Division</string>
+    <string name="division_field_hint" />
+    <string name="lp_label">LP</string>
+    <string name="lp_field_hint" />
+    <string name="series">Promotion Series</string>
+    <string name="series_1">Game 1</string>
+    <string name="series_2">Game 2</string>
+    <string name="series_3">Game 3</string>
+    <string name="series_4">Game 4</string>
+    <string name="series_5">Game 5</string>
+
+    <string name="lol_basic_information">Basic Information</string>
+    <string name="icon_label">Icon</string>
+    <string name="username_label">Username</string>
+    <string name="username_field_hint" />
+    <string name="level_label">Level</string>
+    <string name="level_field_hint" />
+    <string name="server_label">Server</string>
+    <string name="match_history_label">Match History</string>
+    <string name="match_history_hint" />
+    <string name="club_label">Club</string>
+    <string name="club_hint" />
+
+    <string name="emblem_upgrades">Emblem Upgrades</string>
+    <string name="lol_season_previous">Previous Seasons</string>
+    <string name="lol_season_current">Current Season</string>
+
+    <string name="lol_soloDuo_header">Ranked Solo/Duo</string>
+
+    <string name="lol_flex_header">Ranked Flex</string>
+
+    <string name="tft_header">Teamfight Tactics</string>
+    <string name="tft_set_previous">Previous TFT Sets</string>
+    <string name="tft_set_current">Current TFT Set</string>
+
+    <string-array name="server_list">
+        <item>BR</item>
+        <item>EUNE</item>
+        <item>EUW</item>
+        <item>LAN</item>
+        <item>LAS</item>
+        <item>NA</item>
+        <item>OCE</item>
+        <item>RU</item>
+        <item>TR</item>
+        <item>JP</item>
+        <item>PH</item>
+        <item>SG</item>
+        <item>TW</item>
+        <item>VN</item>
+        <item>TH</item>
+        <item>KR</item>
+        <item>CN</item>
+        <item>PBE</item>
+    </string-array>
+
+    <string-array name="emblem_upgrades">
+        <item>Base</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="rank_list_lol">
+        <item>Unranked</item>
+        <item>Iron</item>
+        <item>Bronze</item>
+        <item>Silver</item>
+        <item>Gold</item>
+        <item>Platinum</item>
+        <item>Diamond</item>
+        <item>Master</item>
+        <item>Grandmaster</item>
+        <item>Challenger</item>
+    </string-array>
+
+    <string-array name="rank_list_lol_old">
+        <item>Unranked</item>
+        <item>Bronze</item>
+        <item>Silver</item>
+        <item>Gold</item>
+        <item>Platinum</item>
+        <item>Diamond</item>
+        <item>Master</item>
+        <item>Challenger</item>
+    </string-array>
+
+    <string-array name="division_list_lol">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="division_list_lol_old">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+</resources>

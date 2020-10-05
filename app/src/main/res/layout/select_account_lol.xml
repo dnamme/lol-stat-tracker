@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_button_background"
+    android:paddingLeft="4dp"
+    android:paddingTop="6dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="6dp"
+    android:layout_marginBottom="12dp"
+    tools:ignore="RtlHardcoded">
+    <ImageView
+        android:id="@+id/rankedEmblem"
+        android:layout_width="208px"
+        android:layout_height="208px"
+        android:src="@drawable/emblem_unranked"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rankedEmblem"
+        android:fontFamily="sans-serif"
+        android:text="@string/username_label"
+        android:textColor="@color/lightGray"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/rankedEmblem"
+        android:layout_below="@id/username"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/level_label"
+        android:textColor="@color/lightGray"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/serverFlag"
+        android:layout_width="48px"
+        android:layout_height="48px"
+        android:layout_toEndOf="@+id/rankedEmblem"
+        android:layout_below="@id/level"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/regionflag_default" />
+    <TextView
+        android:id="@+id/serverText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/serverFlag"
+        android:layout_alignTop="@id/serverFlag"
+        android:layout_alignBottom="@id/serverFlag"
+        android:layout_marginLeft="16px"
+        android:fontFamily="sans-serif"
+        android:text="@string/server_label"
+        android:textColor="@color/lightGray"
+        android:textSize="12sp" />
+</RelativeLayout>

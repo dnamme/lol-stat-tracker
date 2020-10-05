@@ -1,0 +1,56 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@color/lightGray</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/darkGray</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="bottomSheetDialogTheme">@style/BottomSheetDialogTheme</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:navigationBarColor">@color/lightGray</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="AddAccount" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorBackground">@color/lightGray</item>
+        <item name="android:navigationBarColor">@color/grayLightBackground</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle</item>
+        <item name="spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle</item>
+    </style>
+
+    <style name="SpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SpinnerDropDownItemStyle" parent="Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AddAccount_oldData">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemStyle.Small</item>
+        <item name="spinnerDropDownItemStyle">@style/SpinnerDropDownItemStyle.Small</item>
+    </style>
+
+    <style name="SpinnerItemStyle.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SpinnerDropDownItemStyle.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+</resources>

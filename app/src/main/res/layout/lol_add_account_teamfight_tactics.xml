@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_account_tft_bottomSheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_background"
+    android:backgroundTint="@color/grayLightInside"
+    android:elevation="5dp"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="16dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="56dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:theme="@style/AddAccount">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/tft_header"
+        android:src="@drawable/bottom_sheet_drag" />
+    <TextView
+        android:id="@+id/add_account_lol_PreviousSets_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tft_header"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/divider"
+                android:src="@drawable/divider"
+                android:tint="@android:color/darker_gray"
+                android:tintMode="src_in" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/tft_set_current"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/add_account_lol_teamfightTactics_emblem"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:contentDescription="@string/tft_set_current"
+                    android:src="@drawable/emblem_provisional"
+                    tools:ignore="RtlHardcoded" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toEndOf="@id/add_account_lol_teamfightTactics_emblem"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="RtlHardcoded">
+                    <TextView
+                        android:id="@+id/add_account_lol_teamfightTactics_emblemUpgrade_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="0dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/emblem_upgrades"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grayDarkTextColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    <RelativeLayout
+                        android:id="@+id/add_account_lol_teamfightTactics_emblemUpgrade_background"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/add_account_field_default">
+                        <Spinner
+                            android:id="@+id/add_account_lol_teamfightTactics_emblemUpgrade_spinner"
+                            android:layout_width="116dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="0dp"
+                            android:backgroundTint="@color/grayDarkTextColor"
+                            android:entries="@array/emblem_upgrades"
+                            android:textAlignment="center" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/add_account_lol_teamfightTactics_current_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/tier_label"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grayDarkTextColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/add_account_lol_teamfightTactics_current_today_tier_spinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/add_account_field_default"
+                        android:entries="@array/rank_list_lol"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_account_lol_teamfightTactics_current_today_division_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/division_label"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grayDarkTextColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/add_account_lol_teamfightTactics_current_today_division_spinner"
+                        android:layout_width="64dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/add_account_field_default"
+                        android:entries="@array/division_list_lol"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/add_account_lol_teamfightTactics_current_today_lp_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:fontFamily="sans-serif"
+                        android:text="@string/lp_label"
+                        android:textAllCaps="true"
+                        android:textColor="@color/grayDarkTextColor"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/add_account_lol_teamfightTactics_current_today_lp_field"
+                        android:layout_width="64dp"
+                        android:layout_height="40dp"
+                        android:autofillHints=""
+                        android:background="@drawable/add_account_field_default"
+                        android:digits="0123456789"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center"
+                        android:hint="@string/division_field_hint"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:paddingStart="12dp"
+                        android:paddingEnd="12dp"
+                        android:singleLine="true"
+                        android:text="@string/default_zero"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/grayDarkTextColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/divider"
+                android:src="@drawable/divider"
+                android:tint="@android:color/darker_gray"
+                android:tintMode="src_in" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/tft_set_previous"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:id="@+id/add_account_lol_teamfightTactics_old_data_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical" />
+            <Button
+                android:id="@+id/add_account_lol_teamfightTactics_old_data_add"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/add_account_button"
+                android:backgroundTint="@color/mandarin"
+                android:drawableLeft="@drawable/add_black"
+                android:paddingLeft="8dp"
+                android:paddingRight="12dp"
+                android:onClick="TeamfightTacticsAddOldData"
+                android:fontFamily="sans-serif"
+                android:text="@string/add_field"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/add_account_lol_finish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/add_account_button"
+                android:backgroundTint="@color/mandarin"
+                android:fontFamily="sans-serif"
+                android:onClick="addAccount"
+                android:text="@string/add_account"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

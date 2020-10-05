@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#353f58</color>
+    <color name="colorPrimaryDark">#1f2437</color>
+    <color name="colorAccent">#32b7fc</color>
+
+    <color name="darkGray">#2b2b2b</color>
+    <color name="lightGray">#3b3f42</color>
+
+    <color name="grayLightBackground">#36393f</color>
+    <color name="grayLightInside">#303237</color>
+
+    <color name="grayDarkBackground">#202225</color>
+    <color name="grayDarkInside">#18191c</color>
+    <color name="grayDarkTextColor">#8a8c8f</color>
+
+    <color name="leagueBlue">#010a13</color>
+    <color name="riotGamesRed">#C92B30</color>
+
+    <color name="rankColorUnranked">#000000</color>
+    <color name="rankColorIron">#525c5d</color>
+    <color name="rankColorBronze">#6a5b3e</color>
+    <color name="rankColorSilver">#9da3af</color>
+    <color name="rankColorGold">#e8a935</color>
+    <color name="rankColorPlatinum">#0fb0a0</color>
+    <color name="rankColorDiamond">#058ab5</color>
+    <color name="rankColorMaster">#895AB4</color>
+    <color name="rankColorGrandmaster">#FA2B2C</color>
+    <color name="rankColorChallenger">#FDEB80</color>
+<!--    #fa566e original m-gm-c -->
+
+    <color name="series_dash">@color/pacificBlue</color>
+    <color name="series_check">#50c878</color>
+    <color name="series_x">#ff0800</color>
+
+
+    <color name="richBlack">#042a2b</color>
+    <color name="pacificBlue">#5eb1bf</color>
+    <color name="lightCyan">#cdedf6</color>
+    <color name="mandarin">#ef7b45</color>
+    <color name="vermilion">#d84727</color>
+
+    <color name="turquoise">#73eedc</color>
+    <color name="maximumBlueGreen">#73c2be</color>
+    <color name="oldLavender">#776885</color>
+    <color name="tyrianPurple">#5f1a37</color>
+    <color name="xiketic">#04030f</color>
+
+    <color name="powderBlue">#b8d8d8</color>
+    <color name="cadetBlue">#7a9e9f</color>
+    <color name="deepSpaceSparkle">#4f6367</color>
+    <color name="beige">#eef5db</color>
+    <color name="orangeRedCrayola">#fe5f55</color>
+
+    <color name="honeydew">#dff8eb</color>
+    <color name="heliotropeGray">#a28f9d</color>
+    <color name="nickel">#74776b</color>
+    <color name="davysGray">#5c574f</color>
+    <color name="blackOlive">#48483a</color>
+
+    <color name="charcoal">#404e5c</color>
+    <color name="blackCoral">#4f6272</color>
+    <color name="lavenderBlue">#b7c3f3</color>
+    <color name="chinaPink">#dd7596</color>
+    <color name="rubineRed">#cf1259</color>
+</resources>

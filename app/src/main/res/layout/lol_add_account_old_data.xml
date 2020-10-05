@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/AddAccount_oldData"
+    tools:ignore="rtlHardcoded"
+    android:layout_marginBottom="8dp">
+
+    <Spinner
+        android:id="@+id/season_spinner"
+        android:background="@drawable/add_account_field_default"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:textAlignment="center" />
+
+    <Spinner
+        android:id="@+id/tier_spinner"
+        android:background="@drawable/add_account_field_default"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/season_spinner"
+        android:textAlignment="center"
+        android:entries="@array/rank_list_lol_old" />
+
+    <Spinner
+        android:id="@+id/division_spinner"
+        android:background="@drawable/add_account_field_default"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tier_spinner"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:entries="@array/division_list_lol" />
+
+    <Spinner
+        android:id="@+id/emblemUpgrade_spinner"
+        android:background="@drawable/add_account_field_default"
+        android:layout_width="48dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/division_spinner"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        android:entries="@array/emblem_upgrades" />
+
+    <ImageButton
+        android:id="@+id/remove_data"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:src="@drawable/close"
+        android:contentDescription="@string/close" />
+</RelativeLayout>

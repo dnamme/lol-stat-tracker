@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:theme="@style/BottomSheetDialogTheme"
+    android:background="@drawable/bottom_sheet_background"
+    android:backgroundTint="@color/lightGray"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp">
+
+    <TextView
+        android:id="@+id/select_icon_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/icon_select"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="408dp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/icon_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/roundcorner"
+        app:layout_constraintBottom_toTopOf="@+id/preview_icon"
+        app:layout_constraintTop_toBottomOf="@+id/select_icon_label">
+        <ImageView
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/preview_icon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/add_account_field_default"
+        android:contentDescription="@string/icon_label"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/confirm_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="RtlHardcoded">
+
+    <ImageButton
+        android:id="@+id/cover_lol"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:contentDescription="@string/lol"
+        android:elevation="5dp"
+        android:onClick="selectLol"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/center_horizontal"
+        app:layout_constraintDimensionRatio="0.75"
+        app:layout_constraintRight_toLeftOf="@+id/center_vertical"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_max="480dp"
+        app:srcCompat="@drawable/cover_lol" />
+
+    <ImageButton
+        android:id="@+id/cover_tft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:contentDescription="@string/tft"
+        android:elevation="5dp"
+        android:onClick="selectTft"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/center_horizontal"
+        app:layout_constraintDimensionRatio="0.75"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_max="480dp"
+        app:srcCompat="@drawable/cover_tft" />
+
+    <ImageButton
+        android:id="@+id/cover_lor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:contentDescription="@string/lor"
+        android:elevation="5dp"
+        android:onClick="selectLor"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintDimensionRatio="0.75"
+        app:layout_constraintRight_toLeftOf="@+id/center_vertical"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/center_horizontal"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_max="480dp"
+        app:srcCompat="@drawable/cover_lor" />
+
+    <ImageButton
+        android:id="@+id/cover_valorant"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:contentDescription="@string/valorant"
+        android:elevation="5dp"
+        android:onClick="selectValorant"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/bottom"
+        app:layout_constraintDimensionRatio="0.75"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/center_vertical"
+        app:layout_constraintTop_toTopOf="@+id/center_horizontal"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_max="480dp"
+        app:srcCompat="@drawable/cover_valorant" />
+
+    <ImageView
+        android:id="@+id/riot-logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/riotgames"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom"
+        app:srcCompat="@drawable/riotgames_logo" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4375" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.875" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
